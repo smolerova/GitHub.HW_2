@@ -1,10 +1,10 @@
 # GitHub.HW_2
 
-1. На локальном репозитории сделать ветки (Postman, Jmeter, CheckLists, Bag Reports, SQL, Charles, Mobile testing)
+1. На локальном репозитории сделать ветки (Postman, Jmeter, CheckLists, Bug Reports, SQL, Charles, Mobile testing)
 ``` git checkout -b Postman
  git checkout -b Jmeter
  git checkout -b CheckLists
- git checkout -b Bag_Reports
+ git checkout -b Bug_Reports
  git checkout -b SQL
  git checkout -b Charles
  git checkout -b Mobile_testing
@@ -14,16 +14,16 @@
  ```git push --set-upstream origin Postman
  git push --set-upstream origin Jmeter
  git push --set-upstream origin CheckLists
- git push --set-upstream origin Bag_Reports
+ git push --set-upstream origin Bug_Reports
  git push --set-upstream origin SQL
  git push --set-upstream origin Charles
  git push --set-upstream origin Mobile_testing
  ```
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
 ```
-git checkout Bag_Reports
-touch bagreport.txt
+git checkout Bug_Reports
+touch bugreport.txt
 
 Summary
 Project
@@ -43,15 +43,15 @@ Attachment
 
 4. Запушить структуру багрепорта на внешний репозиторий
 ```
- git add bagreport.txt
- git commit -m "fill data in bagreport"
+ git add bugreport.txt
+ git commit -m "fill data in bugreport"
  git push
  ```
 
-5. Вмержить ветку Bag Reports в Main
+5. Вмержить ветку Bug Reports в Main
 ```
  git checkout main
- git merge Bag_Reports
+ git merge Bug_Reports
  ```
 
 6. Запушить main на внешний репозиторий.
